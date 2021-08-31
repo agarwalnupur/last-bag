@@ -1,38 +1,270 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
+  height: 50px;
+  margin: 20px 80px 80px 80px;
+  font-family: 'Roboto';
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+.header img{
+  height: 100%;
+  width: 10%;
+}
+
+.opt ul{
+  list-style: none;
+  display: flex;
+  /* justify-content: space-between; */
+  padding:10px 10px;
+}
+.opt li{
+  padding-left: 10px;
+  cursor: pointer;
+}
+.opt li:hover{
+  border-bottom: 2px solid black;
+}
+.header input{
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 0.996px solid black;
+  outline: none;
+}
+.search{
+  white-space: nowrap;
+}
+.orders{
+  margin-top: 8px;
+  padding: 0 5px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  float: right;
+  
+}
+
+.mainsec .row1, .mainsec2 .row2, .mainsec3 .row3{
+  display: flex;
+  margin: 10px 80px;
+  font-family: 'Roboto', sans-serif;
+
+}
+.rtsec1, .rtsec2, .rtsec3{
+  margin-left: 50px;
+}
+.row1 img,.row2 img, .row3 img{
+  height: 30%;
+  width: 33.3%;
+  padding-right: 10px;
+}
+
+.row1 #line1{
+  font-size: 18px;
+  font-family: 'Roboto';
+  line-height: 40px;
+}
+.row1 #line2{
+  display: flex;
+  justify-content: space-between;
+}
+.row1 h3{
+  font-size: 24px;
+  line-height: 80px;
+}
+.btn1{
+  margin: 35px 0px 15px 0;
+  padding: 15px 150px;
+  background-color: black;
+  color:white;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;  
+}
+.btn1:hover{
+  opacity: 0.8;
+}
+.btn2{
+  padding: 15px 140px;
+  border: 0.996px solid lightgray;
+  background-color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;  
+
+}
+.desc2, .desc3 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  font-family: 'Roboto';
+}
+.rtsec2 .ul1{
+  margin-top: 50px;
+}
+.rtsec2 li{
+  line-height: 32px;
+}
+.desc2 .pdt, .desc3{
+  margin-top: 50px;
+}
+.foot{
+  padding-bottom: 20px;
+  color: white;
+  font-family: 'Roboto';
+  background-color: #1b1c1e;
+ 
+}
+.mar{
+  margin: 30px 80px;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+  display: flex;
+  justify-content: space-between;
+}
+.foot ul{
+  list-style: none;
+  margin-top: 20px;
+}
+.mar h4{
+  font-size: 14px;
+  cursor: pointer;
+}
+.mar li, .last li{
+  font-size: 12px;
+  cursor: pointer;
+}
+.mar li{
+  color: gray;
+}
+.mar li:hover{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.last {
+  margin: 20px 80px 10px 80px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+hr{
+  height: 0.956px;
+  background-color: #ccc;
+  border: none;
+}
+img{
+  cursor: pointer;
+}
+.foot li:hover{
+  opacity: 0.7;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.fullbuy{
+  margin: 0 80px;
+  display: flex;
+  font-family: 'Roboto';
+
+}
+
+.btns{
+  display: flex;
+  /* flex-direction: column; */
+}
+.info input{
+  margin: 10px ;
+  padding: 10px 80px 10px 20px;
+  border: 0.996px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+.buy button{
+  padding: 10px 20px;
+  margin: 20px;
+  font-size: 16px;
+  background-color: white;
+  border: 0.996px solid black;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+}
+.buy button:hover{
+  background-color: rgb(238, 238, 238);
+}
+.placeorder:hover{
+  background-color: white;
+}
+.ordersum{
+  margin: 20px;
+}
+.fin{
+  /* width: 100%; */
+  list-style: none;
+  line-height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.bagimg img{
+  height: 50%;
+  width: 70%;
+}
+.lastflex {
+  display: flex;
+}
+.lastflex ul{
+  margin-top: 80px;
+  list-style: none;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+
+}
+
+
+
+.track{
+  /* align-items: center; */
+  margin: 80px  325px;
+  display: flex;
+}
+.track hr{
+  margin: 15px 35px 0 15px ;
+  border-radius: 3px;
+  width: 500px;
+  height: 10px;
+}
+.track p{
+  font-family: 'Roboto';
+  font-size: 12px;
+}
+.bluehr{
+  background-color: blue;
+}
+.grayhr{
+  background-color: gray;
+}
+.pdtdet{
+  margin: 0 80px ;
+  font-family: 'Roboto';
+  display: flex;
+}
+.pdtdet h3, .pdtdet p{
+  margin: 5px 20px 0 20px;
+  line-height: 28px;
+  letter-spacing: 0.3px;
 }
